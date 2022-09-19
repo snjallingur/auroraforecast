@@ -1,0 +1,1 @@
+*/30 * * * * snjallingur bash --login -c "/home/snjallingur/.pyenv/shims/python /usr/share/hassio/homeassistant/snjallingur_scripts/nordurljosaspa.py" >> /home/snjallingur/cronjob.log 2>&1
