@@ -1,0 +1,23 @@
+square: true
+columns: 2
+type: grid
+cards:
+  - type: gauge
+    entity: sensor.nordurljosaspa_today_0
+    name: Norðurljósaspá í dag
+    theme: Google Light Theme
+    min: 0
+    max: 9
+    needle: true
+    severity:
+      green: 4
+      yellow: 2
+      red: 0
+  - type: gauge
+    entity: sensor.nordurljosaspa_today_1
+    name: Norðurljósaspá ámorgun
+    theme: Google Light Theme
+    min: 0
+    max: 9
+    needle: true
+    severity:
