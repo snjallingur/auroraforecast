@@ -1,0 +1,21 @@
+alias: Notification Aurora forecast
+description: ""
+trigger:
+  - platform: numeric_state
+    entity_id: sensor.nordurljosaspa_today_0
+    above: 3
+condition:
+  - condition: sun
+    before: sunrise
+    after: sunset
+  - condition: state
+    entity_id: weather.home
+    state: sunny
+action:
+  - service: notify.mobile_app_xxx
+    data:
+      message: >-
+        Norðurljósaspáin er góð og góð skilyrði. Drifðu þig út til að skoða
+        fallegu norðurljósin
+      title: Góð skilyrði fyrir Norðurljós
+mode: single
