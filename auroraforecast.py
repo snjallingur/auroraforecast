@@ -50,7 +50,7 @@ for evening_date in content:
     #print(evening_date['night_data'])
     datestring = evening_date.find("evening_date").string
     nordurdurljosactivity = evening_date.find("activity_forecast").string
-    print(datestring)
+    #print(datestring)
     dateobject = datetime.datetime.strptime(datestring, "%Y-%m-%d").date()
     #print(str(dateobject.year) + "." + str(dateobject.month))
     daysdelta = dateobject - todaydateobject
